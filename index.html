@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Somma in Array</title>
+  </head>
+  <body>
+    <script>
+      let arr = [];
+      const numeroElementi = 10;
+      const max = 100;
+      let somma = 0;
+
+      for (let i = 0; i < numeroElementi; i++) {
+        arr.push(Math.floor(Math.random() * max));
+        somma += arr[i];
+      }
+      console.log(arr);
+      console.log(somma);
+
+      let element = document.createElement("h1");
+      let text = document.createTextNode(somma);
+      element.appendChild(text);
+      document.querySelector("body").appendChild(element);
+    </script>
+  </body>
+</html>
